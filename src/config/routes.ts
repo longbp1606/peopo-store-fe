@@ -14,6 +14,8 @@ const routes = {
 
     },
     api: {
-        
+
     }
 }
+
+export default routes;
