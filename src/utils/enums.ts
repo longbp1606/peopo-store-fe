@@ -10,6 +10,11 @@ export const Role: { [key: string]: string } = {
     ADMIN: 'ADMIN'
 }
 
+export enum LinkEnum {
+    LINK = 'Link',
+    NAV_LINK = 'NavLink'
+}
+
 export enum AccountStatus {
     ACTIVE = 'ACTIVE',
     INACTIVE = 'INACTIVE',

@@ -1,7 +1,10 @@
+import { cartSlice } from "@/layouts/MainLayout/slice/cartSlice";
 import { configureStore } from "@reduxjs/toolkit";
 
 export const store = configureStore({
-    reducer: {},
+    reducer: {
+        cart: cartSlice.reducer,
+    },
     middleware: (getDefaultMiddleware) => 
         getDefaultMiddleware({
             serializableCheck: false,

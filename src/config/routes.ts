@@ -5,7 +5,9 @@ const routes = {
         register: '/register'
     },
     customer: {
-
+        profile: '/profile',
+        cart: '/cart',
+        schedule: '/schedule'
     },
     staff: {
 
