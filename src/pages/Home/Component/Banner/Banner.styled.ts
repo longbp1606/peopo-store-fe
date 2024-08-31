@@ -1,4 +1,5 @@
-import { Carousel } from "antd";
+import { theme } from "@/themes";
+import { Carousel, Image } from "antd";
 import styled from "styled-components";
 
 export const BannerWrapper = styled(Carousel)`
@@ -35,8 +36,34 @@ export const BannerWrapper = styled(Carousel)`
         top: 25%;
         left: 35%;
     }
+
+    .slick-slide {
+        opacity: 0.5;
+    }
+
+    .slick-active {
+        opacity: 1;
+    }
+
+    .slick-dots li.slick-active button {
+        background: ${theme.colors.primary};
+    }
+
+    .slick-dots li button {
+        background: ${theme.colors.primary};
+        height: 5px;
+    }
+
+    .slick-dots-bottom {
+        bottom: -5px;
+    }
 `;
 
 export const BannerImageHolder = styled.div`
     text-align: center;
+`;
+
+export const BannerImage = styled(Image)`
+    width: 800px;
+    height: 450px;
 `;
