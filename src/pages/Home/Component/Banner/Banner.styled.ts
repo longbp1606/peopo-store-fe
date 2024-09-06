@@ -2,6 +2,11 @@ import { theme } from "@/themes";
 import { Carousel, Image } from "antd";
 import styled from "styled-components";
 
+export const ContainerWrapper = styled.div`
+    width: 100%;
+    overflow: hidden;
+`;
+
 export const BannerWrapper = styled(Carousel)`
     .slick-list {
         overflow: unset;

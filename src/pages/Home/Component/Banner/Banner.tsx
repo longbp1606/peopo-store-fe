@@ -7,22 +7,24 @@ import Container from "@/components/Container";
 
 const Banner = () => {
     return (
-        <Container>
-            <Styled.BannerWrapper arrows>
-                <Styled.BannerImageHolder>
-                    <Styled.BannerImage src={Banner1} preview={false}/>
-                </Styled.BannerImageHolder>
-                <Styled.BannerImageHolder>
-                    <Styled.BannerImage src={Banner2} preview={false}/>
-                </Styled.BannerImageHolder>
-                <Styled.BannerImageHolder>
-                    <Styled.BannerImage src={Banner3} preview={false} />
-                </Styled.BannerImageHolder>
-                <Styled.BannerImageHolder>
-                    <Styled.BannerImage src={Banner4} preview={false} />
-                </Styled.BannerImageHolder>
-            </Styled.BannerWrapper>
-        </Container>
+        <Styled.ContainerWrapper>
+            <Container>
+                <Styled.BannerWrapper arrows>
+                    <Styled.BannerImageHolder>
+                        <Styled.BannerImage src={Banner1} preview={false} />
+                    </Styled.BannerImageHolder>
+                    <Styled.BannerImageHolder>
+                        <Styled.BannerImage src={Banner2} preview={false} />
+                    </Styled.BannerImageHolder>
+                    <Styled.BannerImageHolder>
+                        <Styled.BannerImage src={Banner3} preview={false} />
+                    </Styled.BannerImageHolder>
+                    <Styled.BannerImageHolder>
+                        <Styled.BannerImage src={Banner4} preview={false} />
+                    </Styled.BannerImageHolder>
+                </Styled.BannerWrapper>
+            </Container>
+        </Styled.ContainerWrapper>
     )
 }
 
