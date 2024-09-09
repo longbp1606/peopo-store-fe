@@ -38,13 +38,38 @@ export const CategoryElement = styled.div`
         line-height: 64px;
         font-weight: 600;
     }
+
+    &:nth-child(1) .ant-typography {
+        background: ${theme.colors.blueGradient};
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
+    }
+
+    &:nth-child(2) .ant-typography {
+        background: ${theme.colors.greenGradient};
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
+    }
+
+    &:nth-child(3) .ant-typography {
+        background: ${theme.colors.pinkGradient};
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
+    }
+
+    &:nth-child(4) .ant-typography {
+        background: ${theme.colors.orangeGradient};
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
+    }
+
 `;
 
 export const CategoryImageHolder = styled.div`
     width: 250px;
     overflow: hidden;
-    border: 3px solid ${theme.colors.primary};
     border-radius: 10px;
+    border: 3px solid ${theme.colors.primary};
 `;
 
 export const CategoryImage = styled(Image)`
