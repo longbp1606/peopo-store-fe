@@ -1,7 +1,7 @@
 import useDocumentTitle from "@/hooks/useDocumentTitle";
 import Banner from "./Component/Banner";
 import ProductCategory from "./Component/ProductCategory";
-import Title from "@/components/Title";
+import ProductSection from "./Component/ProductSection";
 
 const Home = () => {
     useDocumentTitle('Home | Peopo Store');
@@ -10,7 +10,7 @@ const Home = () => {
         <>
             <Banner/>
             <ProductCategory/>
-            <Title title="Hàng có sẵn"/>
+            <ProductSection/>
         </>
     )
 };

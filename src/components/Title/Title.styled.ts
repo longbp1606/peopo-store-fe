@@ -6,6 +6,7 @@ export const TitleWrapper = styled.div`
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin: 2em 0;
 `;
 
 export const TitleContainer = styled.div`
