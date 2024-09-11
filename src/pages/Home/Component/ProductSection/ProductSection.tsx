@@ -28,6 +28,11 @@ const ProductSection = () => {
                                 </Styled.ProductElement>
                             ))}
                         </Styled.ProductContainer>
+                        <Styled.ButtonContainer>
+                            <Styled.MoreButton>
+                                Xem tất cả ➤
+                            </Styled.MoreButton>
+                        </Styled.ButtonContainer>
                     </Container>
                 </Styled.ProductWrapper>
             ))}
