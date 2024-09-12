@@ -47,7 +47,7 @@ export const FooterColumnWrapper = styled.div`
             text-align: left;
             
             &:hover {
-                color: ${theme.colors.primary};
+                color: ${theme.colors.black};
             }
         }
     }
@@ -67,6 +67,11 @@ export const FooterCopyright = styled.div`
         font-size: 1.6rem;
         font-weight: 400;
     }
+
+    ${({ theme }) => theme.breakpoints.down('md')} {
+        margin-top: 20px;
+        text-align: center;
+    }
 `;
 
 export const FooterSocial = styled.div`
@@ -83,7 +88,7 @@ export const FooterSocial = styled.div`
         color: ${theme.colors.textPrimary};
         border: 1px solid ${theme.colors.textPrimary};
         border-radius: 100%;
-        transiion: ${theme.transition.primary};
+        transition: ${theme.transition.primary};
 
         & svg {
             transition:  ${theme.transition.primary};
@@ -93,7 +98,7 @@ export const FooterSocial = styled.div`
             border-color: ${theme.colors.primary};
         }
 
-        $:hover svg {
+        &:hover svg {
             color: ${theme.colors.primary};
         }
     }
