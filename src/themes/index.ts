@@ -11,7 +11,10 @@ export const theme = {
         pinkGradient: 'linear-gradient(45deg, rgba(255,7,109,1) 0%, rgba(254,173,231,1) 100%)',
         orangeGradient: 'linear-gradient(45deg, rgba(253,7,85,1) 0%, rgba(253,208,1,1) 100%)',
         textPrimary: 'rgba(0, 0, 0, 0.85)',
+        textSecondary: 'rgba(0, 0, 0, 0.45)',
+        divider: 'rgba(5, 5, 5, 0.06)',
         white: '#FFF',
+        black: '#000',
         shadowCart: 'rgba(56, 56, 56, 0.06)',
     },
     transition: {
