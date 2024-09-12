@@ -9,7 +9,7 @@ const Banner = () => {
     return (
         <Styled.ContainerWrapper>
             <Container>
-                <Styled.BannerWrapper arrows>
+                <Styled.BannerWrapper arrows autoplay>
                     <Styled.BannerImageHolder>
                         <Styled.BannerImage src={Banner1} preview={false} />
                     </Styled.BannerImageHolder>
