@@ -23,7 +23,7 @@ const ProductSection = () => {
                                         {product.name}
                                     </Styled.ProductName>
                                     <Styled.ProductPrice>
-                                        ￥{product.price}
+                                        ¥ {product.price}
                                     </Styled.ProductPrice>
                                 </Styled.ProductElement>
                             ))}
