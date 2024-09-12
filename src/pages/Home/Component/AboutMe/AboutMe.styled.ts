@@ -33,7 +33,9 @@ export const ImageArea = styled.div`
     align-items: center;
 `;
 
-export const ImageHolder = styled.div``;
+export const ImageHolder = styled.div`
+    height: 450px;
+`;
 
 export const ImageHolderBase = css`
     overflow: hidden;
