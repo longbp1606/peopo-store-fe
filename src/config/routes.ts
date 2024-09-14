@@ -2,15 +2,13 @@ const routes = {
     public: {
         home: '/',
         login: '/login',
-        register: '/register'
+        register: '/register',
+        product: 'product/:id'
     },
     customer: {
         profile: '/profile',
         cart: '/cart',
         schedule: '/schedule'
-    },
-    staff: {
-
     },
     admin: {
 
