@@ -3,7 +3,8 @@ const routes = {
         home: '/',
         login: '/login',
         register: '/register',
-        product: 'product/:id'
+        product: '/product',
+        productDetail: '/product/:id'
     },
     customer: {
         profile: '/profile',
