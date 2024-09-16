@@ -4,10 +4,13 @@ import { Alert, Col, Divider, Flex, Row, Typography } from 'antd';
 import { ProductDataSample } from './ProductDetail.sample';
 import { useState } from 'react';
 import { theme } from '@/themes';
+import useDocumentTitle from '@/hooks/useDocumentTitle';
 
 const { Title } = Typography;
 
 const ProductDetail = () => {
+    useDocumentTitle('Produc Detail | Peopo Store');
+    
     const [categorySelected, setCategorySelected] = useState(ProductDataSample.products[0].key);
 
     const handleCategorySelected = (category: string) => {
