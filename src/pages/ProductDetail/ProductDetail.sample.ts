@@ -32,14 +32,14 @@ export const ProductDataSample =
                     name: '7th Anniversary Merch Complete Set Limited Edition',
                     price: 20900,
                     status: false,
-                    img: ''
+                    img: Image3
                 },
                 {
                     key: 'set-2',
                     name: '7th Anniversary Merch Complete Set',
                     price: 20900,
                     status: true,
-                    img: ''
+                    img: Image3
                 }
             ]
         },
@@ -51,21 +51,21 @@ export const ProductDataSample =
                     name: 'Acrylic Diorama Stand',
                     price: 4950,
                     status: true,
-                    img: ''
+                    img: Image4
                 },
                 {
                     key: 'merch-2',
                     name: 'Tokino Sora Plushie - Jacket & Mini Dress ver.',
                     price: 7150,
                     status: true,
-                    img: ''
+                    img: Image5
                 },
                 {
                     key: 'merch-3',
                     name: 'Shoulder Bag',
                     price: 7700,
                     status: true,
-                    img: ''
+                    img: Image6
                 },
             ]
         },
@@ -74,10 +74,10 @@ export const ProductDataSample =
             product: [
                 {
                     key: 'voice-1',
-                    name: 'Situational Voice Pack "Good Morning',
+                    name: 'Situational Voice Pack "Good Morning"',
                     price: 1100,
                     status: true,
-                    img: ''
+                    img: Image7
                 }
             ]
         }
@@ -124,7 +124,13 @@ export const ProductDataSample =
             alt: 'Image8'
         },
     ],
-    description: 'Lorem ipsum',
+    description: `
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Fuga perferendis eaque dolorum ea distinctio quos accusamus, 
+        fugit eum cumque fugiat illum aspernatur recusandae consectetur aliquam sit cupiditate. 
+        Corrupti, quod beatae?
+    `
+    ,
     orderStartDate: '07/09/2024',
     orderEndDate: '07/10/2024',
 };
