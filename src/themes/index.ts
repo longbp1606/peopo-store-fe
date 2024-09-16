@@ -16,7 +16,13 @@ export const theme = {
         divider: 'rgba(5, 5, 5, 0.06)',
         white: '#FFF',
         black: '#000',
+        shadowForm: 'rgb(34 41 47 / 10%)',
         shadowCart: 'rgba(56, 56, 56, 0.06)',
+        shadowDropdown: 'rgba(0, 0, 0, 0.02)',
+        shadowCartHover: 'rgba(56, 56, 56, 0.07)',
+        shadowPurchased: 'rgba(51, 56, 56, 0.06)',
+        shadowPurchasedHover: 'rgba(51, 56, 56, 0.07)',
+        shadowButton: 'rgba(0, 0, 0, 0.04)',
     },
     transition: {
         primary: 'all 0.25s linear',
