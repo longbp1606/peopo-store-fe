@@ -3,6 +3,7 @@ import MainLayout from "@/layouts/MainLayout"
 import NotFound from "@/pages/404/404";
 import Home from "@/pages/Home/Home";
 import ProductDetail from "@/pages/ProductDetail/ProductDetail";
+import Products from "@/pages/Products";
 
 
 const MainRouter = () => {
@@ -12,6 +13,7 @@ const MainRouter = () => {
 const publicRoutes = {
     children: [
         { path: config.routes.public.home, element: <Home/> },
+        { path: config.routes.public.product, element: <Products/>},
         { path: config.routes.public.productDetail, element: <ProductDetail/>}
     ]
 };
