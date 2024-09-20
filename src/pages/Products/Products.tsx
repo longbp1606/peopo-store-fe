@@ -1,7 +1,7 @@
 import Title from '@/components/Title';
 import * as Styled from './Products.styled';
 import Container from '@/components/Container';
-import { Col, Collapse, Flex, Pagination, Row, Select, Space } from 'antd';
+import { Col, Collapse, Flex, Pagination, Select, Space } from 'antd';
 import { ProductFilters, ProductOrder } from './Products.data';
 import { ProductSampleData } from './Products.sample';
 import { useNavigate } from 'react-router-dom';
@@ -22,6 +22,7 @@ const Products = () => {
     const handlePageSizeChange = (pageSize: number) => {
         setPageSize(pageSize);
     }
+    console.log('Page size: ', pageSize)
 
     return (
         <>
@@ -31,7 +32,11 @@ const Products = () => {
                 <Container>
                     <Flex gap={20}>
                         <Col lg={6}>
-                            <Collapse items={ProductFilters} />
+                            <Collapse 
+                                items={ProductFilters} 
+                                defaultActiveKey={['1','2','3']}
+                                ghost
+                            />
                         </Col>
 
                         <Col lg={18}>
@@ -76,9 +81,10 @@ const Products = () => {
                                 <Pagination
                                     align='end'
                                     defaultCurrent={1}
-                                    total={50}
+                                    total={100}
                                     showSizeChanger
                                     showQuickJumper
+                                    onShowSizeChange={(size) => handlePageSizeChange(size)}
                                 />
                             </Space>
                         </Col>
