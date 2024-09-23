@@ -7,7 +7,14 @@ const routes = {
         productDetail: '/product/:id'
     },
     customer: {
+        dashboard: '/dashboard',
         profile: '/profile',
+        address: '/address',
+        order: '/order',
+        orderDetail: '/order/:id',
+        voucher: '/voucher',
+        point: '/point',
+        notification: '/notification',
         cart: '/cart',
         schedule: '/schedule'
     },
