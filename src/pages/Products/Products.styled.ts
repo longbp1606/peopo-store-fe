@@ -4,7 +4,15 @@ import styled from "styled-components";
 
 const { Text } = Typography;
 
-export const ProductWrapper = styled.div``;
+export const ProductWrapper = styled.div`
+    & .ant-collapse-header {
+        border-bottom: 1px solid ${theme.colors.divider};
+    }
+
+    & .ant-collapse-item:last-child > .ant-collapse-header {
+        border-radius: 0;
+    }
+`;
 
 export const ProductElement = styled.div`
     display: flex;
