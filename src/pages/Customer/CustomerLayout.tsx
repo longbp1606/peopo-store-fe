@@ -9,7 +9,7 @@ const CustomerLayout = () => {
         <>
             <main style={{ margin: '2em 0' }}>
                 <Container>
-                    <Row>
+                    <Row justify="space-between">
                         <Col>
                             <Sidebar
                                 title='Tài khoản'
@@ -17,7 +17,7 @@ const CustomerLayout = () => {
                             />
                         </Col>
 
-                        <Col>
+                        <Col lg={18}>
                             <Outlet />
                         </Col>
                     </Row>
