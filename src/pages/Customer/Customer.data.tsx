@@ -1,10 +1,13 @@
 import Avatar from '@/assets/example/profile/avatar.jpg';
+import { Gender } from '@/utils/enums';
 import { Space, TableProps, Tag } from 'antd';
 import { Link } from 'react-router-dom';
 
 export const ProfileSampleData = {
     username: 'shiroganetoru',
     fullname: 'Shirogane Toru',
+    dateOfBirth: '12/12/2000',
+    gender: Gender.MALE,
     email: 'shiroganetoru@gmail.com',
     phone: '0123456789',
     address: [],
