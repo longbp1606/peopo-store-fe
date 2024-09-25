@@ -1,6 +1,7 @@
 import config from "@/config";
 import MainLayout from "@/layouts/MainLayout"
 import NotFound from "@/pages/404/404";
+import Address from "@/pages/Customer/Address";
 import CustomerLayout from "@/pages/Customer/CustomerLayout";
 import Dashboard from "@/pages/Customer/Dashboard";
 import Profile from "@/pages/Customer/Profile";
@@ -30,6 +31,7 @@ const customerRoutes = {
     children: [
         { path: config.routes.customer.dashboard, element: <Dashboard /> },
         { path: config.routes.customer.profile, element: <Profile /> },
+        { path: config.routes.customer.address, element: <Address /> },
     ]
 }
 
