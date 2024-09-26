@@ -1,6 +1,6 @@
 import Avatar from '@/assets/example/profile/avatar.jpg';
 import { Gender } from '@/utils/enums';
-import { Space, TableProps, Tag } from 'antd';
+import { Space, TableProps, TabsProps, Tag } from 'antd';
 import { Link } from 'react-router-dom';
 
 export const ProfileSampleData = {
@@ -210,4 +210,74 @@ export const AddressSampleData = [
         phoneNumber: '0987654321',
         default: false
     }
+]
+
+
+export const TabItems: TabsProps['items'] = [
+    {
+        key: '1',
+        label: 'Đợi hàng về',
+    },
+    {
+        key: '2',
+        label: 'Đang xử lý',
+    },
+    {
+        key: '3',
+        label: 'Đang chuẩn bị hàng',
+    },
+    {
+        key: '4',
+        label: 'Đang giao hàng',
+    },
+    {
+        key: '5',
+        label: 'Giao hàng',
+    },
+    {
+        key: '6',
+        label: 'Thành công',
+    },
+    {
+        key: '7',
+        label: 'Đã hủy',
+    },
+];
+
+export const VoucherSampleData = [
+    {
+        key: 1,
+        label: 'MÃ GIẢM GIÁ 100K',
+        description: `Không áp dụng cho các mặt hàng không tồn tại`,
+        code: 'TORUDEPTRAIVL',
+        endDate: '31/12/2024'
+    },
+    {
+        key: 2,
+        label: 'MÃ GIẢM GIÁ 100K',
+        description: `Không áp dụng cho các mặt hàng không tồn tại`,
+        code: 'TORUDEPTRAIVL',
+        endDate: '31/12/2024'
+    },
+    {
+        key: 3,
+        label: 'MÃ GIẢM GIÁ 100K',
+        description: `Không áp dụng cho các mặt hàng không tồn tại`,
+        code: 'TORUDEPTRAIVL',
+        endDate: '31/12/2024'
+    },
+    {
+        key: 4,
+        label: 'MÃ GIẢM GIÁ 100K',
+        description: `Không áp dụng cho các mặt hàng không tồn tại`,
+        code: 'TORUDEPTRAIVL',
+        endDate: '31/12/2024'
+    },
+    {
+        key: 5,
+        label: 'MÃ GIẢM GIÁ 100K',
+        description: `Không áp dụng cho các mặt hàng không tồn tại`,
+        code: 'TORUDEPTRAIVL',
+        endDate: '31/12/2024'
+    },
 ]
