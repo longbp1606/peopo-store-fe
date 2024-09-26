@@ -3,6 +3,7 @@ import Sidebar from '@/components/Sidebar'
 import CustomerSidebarContent from '@/components/Sidebar/Customer/CustomerSidebarContent'
 import { Col, Row } from 'antd'
 import { Outlet } from 'react-router-dom'
+import { SectionWrapper } from './Customer.styled'
 
 const CustomerLayout = () => {
     return (
@@ -18,7 +19,9 @@ const CustomerLayout = () => {
                         </Col>
 
                         <Col lg={18}>
-                            <Outlet />
+                            <SectionWrapper>
+                                <Outlet />
+                            </SectionWrapper>
                         </Col>
                     </Row>
                 </Container>
