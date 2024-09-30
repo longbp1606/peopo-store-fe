@@ -281,3 +281,160 @@ export const VoucherSampleData = [
         endDate: '31/12/2024'
     },
 ]
+
+export interface PointDataType {
+    key: number;
+    action: string;
+    time: Date | string;
+    orderID?: string;
+    balanceBefore: number;
+    transaction: number;
+    balanceAfter: number;
+}
+
+export const PointTableSource: TableProps<PointDataType>['columns'] = [
+    {
+        title: '#',
+        dataIndex: 'key',
+        key: 'key'
+    },
+    {
+        title: 'Hành động',
+        dataIndex: 'action',
+        key: 'action'
+    },
+    {
+        title: 'Thời gian',
+        dataIndex: 'time',
+        key: 'time'
+    },
+    {
+        title: 'Đơn hàng',
+        dataIndex: 'orderID',
+        key: 'orderID'
+    },
+    {
+        title: 'Số dư trước',
+        dataIndex: 'balanceBefore',
+        key: 'balanceBefore'
+    },
+    {
+        title: 'Giao dịch',
+        dataIndex: 'transaction',
+        key: 'transaction'
+    },
+    {
+        title: 'Số dư sau',
+        dataIndex: 'balanceAfter',
+        key: 'balanceAfter'
+    },
+];
+
+export const PointData: PointDataType[] = [
+    {
+        key: 1,
+        action: 'Tích điểm',
+        time: '12:00 29/09/2024',
+        orderID: '123456789',
+        balanceBefore: 0,
+        transaction: 123,
+        balanceAfter: 123
+    },
+    {
+        key: 2,
+        action: 'Tích điểm',
+        time: '12:00 29/09/2024',
+        orderID: '123456789',
+        balanceBefore: 0,
+        transaction: 123,
+        balanceAfter: 123
+    },
+    {
+        key: 3,
+        action: 'Tích điểm',
+        time: '12:00 29/09/2024',
+        orderID: '123456789',
+        balanceBefore: 0,
+        transaction: 123,
+        balanceAfter: 123
+    },
+    {
+        key: 4,
+        action: 'Tích điểm',
+        time: '12:00 29/09/2024',
+        orderID: '123456789',
+        balanceBefore: 0,
+        transaction: 123,
+        balanceAfter: 123
+    },
+    {
+        key: 5,
+        action: 'Tích điểm',
+        time: '12:00 29/09/2024',
+        orderID: '123456789',
+        balanceBefore: 0,
+        transaction: 123,
+        balanceAfter: 123
+    },
+]
+
+export const NotifyTab: TabsProps['items'] = [
+    {
+        key: '1',
+        label: 'Tất cả',
+    },
+    {
+        key: '2',
+        label: 'Đơn hàng',
+    },
+    {
+        key: '3',
+        label: 'Sự kiện',
+    },
+    {
+        key: '4',
+        label: 'Mã giảm giá',
+    },
+    {
+        key: '5',
+        label: 'Xác nhận',
+    },
+];
+
+export const NotifySampleData = [
+    {
+        key: 1,
+        label: 'Đơn hàng của bạn đã được đặt',
+        datetime: '12:00 12/12/2024',
+        content: 'Đơn hàng của bạn đã được đặt hàng thành công',
+        isRead: false
+    },
+    {
+        key: 2,
+        label: 'Đơn hàng của bạn đã được đặt',
+        datetime: '12:00 12/12/2024',
+        content: 'Đơn hàng của bạn đã được đặt hàng thành công',
+        isRead: false
+    },
+    {
+        key: 3,
+        label: 'Đơn hàng của bạn đã được đặt',
+        datetime: '12:00 12/12/2024',
+        content: 'Đơn hàng của bạn đã được đặt hàng thành công',
+        isRead: false
+    },
+    {
+        key: 4,
+        label: 'Đơn hàng của bạn đã được đặt',
+        datetime: '12:00 12/12/2024',
+        content: 'Đơn hàng của bạn đã được đặt hàng thành công',
+        isRead: true
+    },
+    {
+        key: 5,
+        label: 'Đơn hàng của bạn đã được đặt',
+        datetime: '12:00 12/12/2024',
+        content: 'Đơn hàng của bạn đã được đặt hàng thành công',
+        isRead: true
+    },
+]
