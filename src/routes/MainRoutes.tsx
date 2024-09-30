@@ -4,7 +4,9 @@ import NotFound from "@/pages/404/404";
 import Address from "@/pages/Customer/Address";
 import CustomerLayout from "@/pages/Customer/CustomerLayout";
 import Dashboard from "@/pages/Customer/Dashboard";
+import Notification from "@/pages/Customer/Notification";
 import Order from "@/pages/Customer/Order";
+import Point from "@/pages/Customer/Point";
 import Profile from "@/pages/Customer/Profile";
 import Voucher from "@/pages/Customer/Voucher";
 import Home from "@/pages/Home/Home";
@@ -36,6 +38,8 @@ const customerRoutes = {
         { path: config.routes.customer.address, element: <Address /> },
         { path: config.routes.customer.order, element: <Order /> },
         { path: config.routes.customer.voucher, element: <Voucher /> },
+        { path: config.routes.customer.point, element: <Point />},
+        { path: config.routes.customer.notification, element: <Notification />}
     ]
 }
 
