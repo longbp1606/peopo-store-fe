@@ -68,6 +68,8 @@ const useAuth = () => {
         try {
             setLoading(true);
 
+            setUser(user);
+
             setRole(getRole());
         } finally {
             setLoading(false);

@@ -19,10 +19,10 @@ const routes = {
         schedule: '/schedule'
     },
     admin: {
-
+        dashboard: '/admin',
     },
     api: {
-
+        
     }
 }
 
