@@ -7,6 +7,7 @@ export const LogoWrapper = styled(Link)`
     display: flex;
     align-items: center;
     column-gap: 10px;
+    justify-content: center;
 `;
 
 export const LogoTitle = styled(Typography.Text)`
