@@ -9,7 +9,7 @@ const AdminSidebar = ({ collapsed }: { collapsed: boolean}) => {
         <Sider trigger={null} collapsible collapsed={collapsed}>
             <Logo to="/"/>
             <Menu
-                theme="light"
+                theme="dark"
                 mode="inline"
                 defaultSelectedKeys={['1']}
                 items={AdminSidebarItems}
