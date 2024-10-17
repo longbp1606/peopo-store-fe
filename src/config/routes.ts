@@ -3,6 +3,8 @@ const routes = {
         home: '/',
         login: '/login',
         register: '/register',
+        forgotPassword: '/forgot-password',
+        setPassword: '/set-password',
         product: '/product',
         productDetail: '/product/:id'
     },
