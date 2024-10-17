@@ -20,6 +20,9 @@ const routes = {
     },
     admin: {
         dashboard: '/admin',
+        manageOrder: '/admin/manage/orders',
+        manageProduct: '/admin/manage/products',
+        manageCustomer: '/admin/manage/customers',
     },
     api: {
         
