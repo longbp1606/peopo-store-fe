@@ -47,4 +47,107 @@ export const OrderTableColumns: TableProps<ManageOrderDataType>['columns'] = [
         dataIndex: 'status',
         key: 'status',
     },
+];
+
+export const ManageOrderSampleData: ManageOrderDataType[] = [
+    {
+        key: '1',
+        orderId: '1234',
+        orderUser: 'Shirogane Toru',
+        type: 'Đơn hàng đặt cọc trước',
+        deposit: 400000,
+        remaining: 1200000,
+        total: 1600000,
+        status: 'Đang đợi hàng về'
+    },
+    {
+        key: '2',
+        orderId: '1234',
+        orderUser: 'Shirogane Toru',
+        type: 'Đơn hàng đặt cọc trước',
+        deposit: 400000,
+        remaining: 1200000,
+        total: 1600000,
+        status: 'Đang đợi hàng về'
+    },
+    {
+        key: '3',
+        orderId: '1234',
+        orderUser: 'Shirogane Toru',
+        type: 'Đơn hàng đặt cọc trước',
+        deposit: 400000,
+        remaining: 1200000,
+        total: 1600000,
+        status: 'Đang đợi hàng về'
+    },
+    {
+        key: '4',
+        orderId: '1234',
+        orderUser: 'Shirogane Toru',
+        type: 'Đơn hàng đặt cọc trước',
+        deposit: 400000,
+        remaining: 1200000,
+        total: 1600000,
+        status: 'Đang đợi hàng về'
+    },
+    {
+        key: '5',
+        orderId: '1234',
+        orderUser: 'Shirogane Toru',
+        type: 'Đơn hàng đặt cọc trước',
+        deposit: 400000,
+        remaining: 1200000,
+        total: 1600000,
+        status: 'Đang đợi hàng về'
+    },
+    {
+        key: '6',
+        orderId: '1234',
+        orderUser: 'Shirogane Toru',
+        type: 'Đơn hàng đặt cọc trước',
+        deposit: 400000,
+        remaining: 1200000,
+        total: 1600000,
+        status: 'Đang đợi hàng về'
+    },
+    {
+        key: '7',
+        orderId: '1234',
+        orderUser: 'Shirogane Toru',
+        type: 'Đơn hàng đặt cọc trước',
+        deposit: 400000,
+        remaining: 1200000,
+        total: 1600000,
+        status: 'Đang đợi hàng về'
+    },
+    {
+        key: '8',
+        orderId: '1234',
+        orderUser: 'Shirogane Toru',
+        type: 'Đơn hàng đặt cọc trước',
+        deposit: 400000,
+        remaining: 1200000,
+        total: 1600000,
+        status: 'Đang đợi hàng về'
+    },
+    {
+        key: '9',
+        orderId: '1234',
+        orderUser: 'Shirogane Toru',
+        type: 'Đơn hàng đặt cọc trước',
+        deposit: 400000,
+        remaining: 1200000,
+        total: 1600000,
+        status: 'Đang đợi hàng về'
+    },
+    {
+        key: '10',
+        orderId: '1234',
+        orderUser: 'Shirogane Toru',
+        type: 'Đơn hàng đặt cọc trước',
+        deposit: 400000,
+        remaining: 1200000,
+        total: 1600000,
+        status: 'Đang đợi hàng về'
+    },
 ]
