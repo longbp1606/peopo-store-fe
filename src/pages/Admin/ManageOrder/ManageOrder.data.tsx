@@ -1,3 +1,6 @@
+import Tag from "@/components/Tag";
+import { OrderStatusEnum } from "@/utils/enums";
+import { formatCurrency } from "@/utils/formatCurrency";
 import { TableProps } from "antd";
 
 export interface ManageOrderDataType {
@@ -31,21 +34,27 @@ export const OrderTableColumns: TableProps<ManageOrderDataType>['columns'] = [
         title: 'Cọc trước',
         dataIndex: 'deposit',
         key: 'deposit',
+        render: (deposit) => formatCurrency(deposit),
     },
     {
         title: 'Còn lại',
         dataIndex: 'remaining',
         key: 'remaining',
+        render: (deposit) => formatCurrency(deposit),
     },
     {
         title: 'Tổng tiền',
         dataIndex: 'total',
         key: 'total',
+        render: (deposit) => formatCurrency(deposit),
     },
     {
         title: 'Trạng thái',
         dataIndex: 'status',
         key: 'status',
+        render: (_, { status }) => (
+            <Tag status={status} type={OrderStatusEnum}/>
+        ),
     },
 ];
 
@@ -58,7 +67,7 @@ export const ManageOrderSampleData: ManageOrderDataType[] = [
         deposit: 400000,
         remaining: 1200000,
         total: 1600000,
-        status: 'Đang đợi hàng về'
+        status: OrderStatusEnum.PENDING
     },
     {
         key: '2',
@@ -68,7 +77,7 @@ export const ManageOrderSampleData: ManageOrderDataType[] = [
         deposit: 400000,
         remaining: 1200000,
         total: 1600000,
-        status: 'Đang đợi hàng về'
+        status: OrderStatusEnum.DELIVERED
     },
     {
         key: '3',
@@ -78,7 +87,7 @@ export const ManageOrderSampleData: ManageOrderDataType[] = [
         deposit: 400000,
         remaining: 1200000,
         total: 1600000,
-        status: 'Đang đợi hàng về'
+        status: OrderStatusEnum.DELIVERING
     },
     {
         key: '4',
@@ -88,7 +97,7 @@ export const ManageOrderSampleData: ManageOrderDataType[] = [
         deposit: 400000,
         remaining: 1200000,
         total: 1600000,
-        status: 'Đang đợi hàng về'
+        status: OrderStatusEnum.SUCESSFULLY
     },
     {
         key: '5',
@@ -98,7 +107,7 @@ export const ManageOrderSampleData: ManageOrderDataType[] = [
         deposit: 400000,
         remaining: 1200000,
         total: 1600000,
-        status: 'Đang đợi hàng về'
+        status: OrderStatusEnum.CANCELLED
     },
     {
         key: '6',
@@ -108,7 +117,7 @@ export const ManageOrderSampleData: ManageOrderDataType[] = [
         deposit: 400000,
         remaining: 1200000,
         total: 1600000,
-        status: 'Đang đợi hàng về'
+        status: OrderStatusEnum.PENDING
     },
     {
         key: '7',
@@ -118,7 +127,7 @@ export const ManageOrderSampleData: ManageOrderDataType[] = [
         deposit: 400000,
         remaining: 1200000,
         total: 1600000,
-        status: 'Đang đợi hàng về'
+        status: OrderStatusEnum.DELIVERED
     },
     {
         key: '8',
@@ -128,7 +137,7 @@ export const ManageOrderSampleData: ManageOrderDataType[] = [
         deposit: 400000,
         remaining: 1200000,
         total: 1600000,
-        status: 'Đang đợi hàng về'
+        status: OrderStatusEnum.DELIVERING
     },
     {
         key: '9',
@@ -138,7 +147,7 @@ export const ManageOrderSampleData: ManageOrderDataType[] = [
         deposit: 400000,
         remaining: 1200000,
         total: 1600000,
-        status: 'Đang đợi hàng về'
+        status: OrderStatusEnum.SUCESSFULLY
     },
     {
         key: '10',
@@ -148,6 +157,6 @@ export const ManageOrderSampleData: ManageOrderDataType[] = [
         deposit: 400000,
         remaining: 1200000,
         total: 1600000,
-        status: 'Đang đợi hàng về'
+        status: OrderStatusEnum.CANCELLED
     },
-]
+];
