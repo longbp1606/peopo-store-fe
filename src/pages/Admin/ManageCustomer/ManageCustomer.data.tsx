@@ -111,7 +111,7 @@ export const CustomerTableColumns: TableProps<ManageCustomerDataType>['columns']
 
 export const ManageCustomerSampleData: ManageCustomerDataType[] = [
     {
-        key: '1',
+        key: '1111',
         avatar: RaidenChibi,
         customerId: '1111',
         customerName: 'Shirogane Toru',
@@ -122,7 +122,7 @@ export const ManageCustomerSampleData: ManageCustomerDataType[] = [
         status: 'online',
     },
     {
-        key: '2',
+        key: '2222',
         avatar: '',
         customerId: '2222',
         customerName: 'Shirogane Toru',
@@ -133,7 +133,7 @@ export const ManageCustomerSampleData: ManageCustomerDataType[] = [
         status: 'online',
     },
     {
-        key: '3',
+        key: '3333',
         avatar: '',
         customerId: '3333',
         customerName: 'Shirogane Toru',
@@ -144,7 +144,7 @@ export const ManageCustomerSampleData: ManageCustomerDataType[] = [
         status: 'online',
     },
     {
-        key: '4',
+        key: '4444',
         avatar: '',
         customerId: '4444',
         customerName: 'Shirogane Toru',
@@ -155,7 +155,7 @@ export const ManageCustomerSampleData: ManageCustomerDataType[] = [
         status: 'offline',
     },
     {
-        key: '5',
+        key: '5555',
         avatar: '',
         customerId: '5555',
         customerName: 'Shirogane Toru',
