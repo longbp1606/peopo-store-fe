@@ -44,10 +44,6 @@ const ManageCustomer = () => {
         setImportedData([]);
     };
 
-    useEffect(() => {
-        console.log(pageSize);
-    }, [customerData]);
-
     return (
         <>
             {contextHolder}
