@@ -25,6 +25,7 @@ const routes = {
         manageOrder: '/admin/manage/orders',
         manageProduct: '/admin/manage/products',
         manageCustomer: '/admin/manage/customers',
+        manageCustomerDetails: '/admin/manage/customers/:id',
     },
     api: {
         
