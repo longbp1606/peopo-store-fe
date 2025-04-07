@@ -1,8 +1,6 @@
 import RaidenChibi from '@/assets/example/profile/avatar.jpg';
-import { EyeFilled, EyeOutlined, UserOutlined } from "@ant-design/icons";
+import { EyeOutlined, UserOutlined } from "@ant-design/icons";
 import { Avatar, Badge, Button, TableProps, Tag } from "antd";
-import { useNavigate } from 'react-router-dom';
-
 
 export interface ManageCustomerDataType {
     key: string;

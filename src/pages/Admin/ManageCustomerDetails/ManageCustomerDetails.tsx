@@ -1,9 +1,8 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { Avatar, Badge, Button, Card, Col, Descriptions, Flex, Row, Tag, Typography } from "antd";
-import { ManageCustomerDataType, ManageCustomerSampleData } from "../ManageCustomer/ManageCustomer.data";
+import { ManageCustomerSampleData } from "../ManageCustomer/ManageCustomer.data";
 import * as Styled from "./ManageCustomerDetails.styled";
 import { ArrowLeftOutlined, UserOutlined } from "@ant-design/icons";
-import { BiArrowBack } from "react-icons/bi";
 
 const { Title } = Typography;
 
