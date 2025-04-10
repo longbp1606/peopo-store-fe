@@ -3,7 +3,7 @@ import { UploadOutlined } from '@ant-design/icons';
 import * as Styled from './ManageCustomer.styled';
 import { CustomerTableColumns, ManageCustomerDataType, ManageCustomerSampleData } from './ManageCustomer.data';
 import { parseCustomerFile, validateFileType } from '@/utils/fileParser';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const { Title, Text } = Typography;
 // const { Dragger } = Upload;
