@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import * as Styled from './Header.styled';
 import Container from '@/components/Container';
-import { Badge, Col, Flex, Input, MenuProps, Row } from 'antd';
+import { Badge, Button, Col, Flex, Input, MenuProps, Row } from 'antd';
 import Logo from '@/components/Logo';
 import config from '@/config';
 import { BellOutlined, ShoppingCartOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import cookiesUtils from '@/services/cookiesUtils';
 import Toolbar from '@/components/Toolbar';
 
@@ -32,6 +32,7 @@ const items: MenuProps['items'] = [
 
 const Header = () => {
     const [show, setShow] = useState(false);
+    const navigate = useNavigate();
     const transitionNavBar = () => {
         if (window.scrollY > 0) setShow(true);
         else setShow(false);
@@ -53,16 +54,22 @@ const Header = () => {
 
                         <Col lg={8}>
                             <Flex gap={16} align='center'>
-                            <Search placeholder="Search" enterButton allowClear/>
+                                <Search placeholder="Search" enterButton allowClear />
                                 <Badge count={9} showZero>
-                                    <BellOutlined style={{ fontSize: '26px'}}/>
+                                    <BellOutlined style={{ fontSize: '26px' }} />
                                 </Badge>
                                 <Badge count={9} showZero>
-                                    <ShoppingCartOutlined style={{ fontSize: '26px'}} />
+                                    <ShoppingCartOutlined style={{ fontSize: '26px' }} />
                                 </Badge>
                                 <Toolbar
-                                menu={items}
-                            />
+                                    menu={items}
+                                />
+                                <Button
+                                    type='primary'
+                                    onClick={() => navigate(config.routes.public.login)}
+                                >
+                                    Đăng nhập
+                                </Button>
                             </Flex>
                         </Col>
                     </Row>
