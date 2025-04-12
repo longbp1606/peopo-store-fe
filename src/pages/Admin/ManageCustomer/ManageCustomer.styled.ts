@@ -12,6 +12,17 @@ export const ManageCustomerWrapper = styled(Flex)`
     }
 `;
 
+export const HeaderWrapper = styled(Flex)`
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    & h3.ant-typography {
+        color: ${theme.colors.primary};
+        width: 100%;
+    }
+`;
+
 export const ModalTable = styled(Table)`
     margin-top: 16px;
     
